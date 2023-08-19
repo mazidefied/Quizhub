@@ -1372,7 +1372,7 @@ const quizzes = [
     name: "Introduction to Ethical Hacking",
     id: 2,
     timer: {
-      minutes: 50,
+      minutes: 30,
       seconds: 0,
     },
     imgUrl: "https://www.astatraining.com/wp-content/uploads/2020/03/what-is-an-ethical-hacker.jpg",
