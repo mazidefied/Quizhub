@@ -76,7 +76,7 @@ const Header = () => {
                     <div className="bar"></div>
                     <div className="bar"></div>
                 </div>
-                <button style={location.pathname.includes("/result") && {opacity: "0", pointerEvents: "none"}} className='to-share' onClick={()=>{
+                <button style={location.pathname.includes("/result") ? {opacity: "0", pointerEvents: "none"} : {width: "fit-content"}} className='to-share' onClick={()=>{
                     appState.functions.sharePage()
                 }}>
                     Share
