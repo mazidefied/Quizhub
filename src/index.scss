@@ -1613,10 +1613,6 @@ body{
             overflow-y: scroll;
             padding-bottom: 50px;
 
-            @media screen and (max-width: 660px) {
-                padding-top: 150px;
-            }
-
             .back{
                 position: fixed;
                 padding: 10px 15px;
@@ -1660,6 +1656,10 @@ body{
                 align-items: center;
                 padding-bottom: 30px;
                 margin-bottom: 7px;
+
+                &.x{
+                    margin-top: 50px;
+                }
 
                 .quiz-name{
                     width: 100%;
