@@ -1613,6 +1613,10 @@ body{
             overflow-y: scroll;
             padding-bottom: 50px;
 
+            @media screen and (max-width: 660px) {
+                padding-top: 150px;
+            }
+
             .back{
                 position: fixed;
                 padding: 10px 15px;
