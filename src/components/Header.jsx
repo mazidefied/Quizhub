@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { NavLink, useNavigate} from 'react-router-dom'
+import { NavLink, useLocation, useNavigate} from 'react-router-dom'
 import {IoMdAlarm} from "react-icons/io"
 import AppContext from '../quizContext/AppContext'
 import logoOne from "../assets/logo512.png"
@@ -17,6 +17,8 @@ const Header = () => {
     const formattedSeconds = formatTime(timeLeft.seconds);
 
     const navigate = useNavigate()
+
+    const location = useLocation()
 
     return (
     <nav className='header'>
@@ -74,7 +76,7 @@ const Header = () => {
                     <div className="bar"></div>
                     <div className="bar"></div>
                 </div>
-                <button className='to-share' onClick={()=>{
+                <button style={location.pathname.includes("/result") && {opacity: "0", pointerEvents: "none"}} className='to-share' onClick={()=>{
                     appState.functions.sharePage()
                 }}>
                     Share
